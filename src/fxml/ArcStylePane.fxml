@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<TitledPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainPane" text="Arc style" xmlns="http://javafx.com/javafx/8"
+            fx:controller="vectordraw.controllers.ShapeArcController" alignment="TOP_LEFT" expanded="false">
+    <fx:define>
+        <ToggleGroup fx:id="arcStyle"/>
+    </fx:define>
+    <tooltip>
+        <Tooltip text="%ShapeArcTooltip.1"/>
+    </tooltip>
+    <AnchorPane>
+        <ToggleButton fx:id="arcB" layoutX="5.0" layoutY="4.0" mnemonicParsing="false" toggleGroup="$arcStyle">
+            <graphic>
+                <ImageView>
+                    <Image url="@/res/Arc.png"/>
+                </ImageView>
+            </graphic>
+            <tooltip>
+                <Tooltip text="%ShapeArcTooltip.2"/>
+            </tooltip>
+        </ToggleButton>
+        <ToggleButton fx:id="wedgeB" layoutX="50.0" layoutY="4.0" mnemonicParsing="false" toggleGroup="$arcStyle">
+            <graphic>
+                <ImageView>
+                    <Image url="@/res/wedge.png"/>
+                </ImageView>
+            </graphic>
+            <tooltip>
+                <Tooltip text="%ShapeArcTooltip.3"/>
+            </tooltip>
+        </ToggleButton>
+        <ToggleButton fx:id="chordB" layoutX="95.0" layoutY="4.0" mnemonicParsing="false" toggleGroup="$arcStyle">
+            <graphic>
+                <ImageView>
+                    <Image url="@/res/chord.png"/>
+                </ImageView>
+            </graphic>
+            <tooltip>
+                <Tooltip text="%ShapeArcTooltip.4"/>
+            </tooltip>
+        </ToggleButton>
+        
+    </AnchorPane>
+</TitledPane>

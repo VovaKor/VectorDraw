@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import vectordraw.view.Canvas?>
+
+<Canvas xmlns:fx="http://javafx.com/fxml/1" fx:id="canvas"/>
+

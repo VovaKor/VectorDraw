@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="vectordraw.controllers.MainWindowController">
+    <center>
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <Tab closable="false" text="%CanvasTabName.1">
+                <SplitPane dividerPositions="0.85">
+                    <ScrollPane fx:id="scrollPane">
+                        <fx:include fx:id="canvas" source="CanvasPane.fxml"/>
+                    </ScrollPane>
+                    <ScrollPane maxWidth="310" minWidth="310" prefWidth="310">
+                        <VBox maxWidth="310" minWidth="310" prefWidth="310">
+                            <fx:include source="ShapeBorderPane.fxml"/>
+                            <fx:include source="ShapeFillingPane.fxml"/>
+                            <fx:include source="ArcStylePane.fxml"/>                           
+                            <fx:include source="PositionZPane.fxml"/>
+                            <fx:include source="GroupPane.fxml"/>
+                            <fx:include source="PositionOnPagePane.fxml"/>                            
+                        </VBox>
+                    </ScrollPane>
+                </SplitPane>
+            </Tab>                           
+        </TabPane>
+    </center>
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <fx:include source="OpenSaveBar.fxml"/>
+            <fx:include source="ZoomBar.fxml"/>
+            <fx:include source="DeleteBotton.fxml"/>
+            <HBox spacing="10"/>
+            <fx:include source="ShapeTypesBar.fxml"/>            
+        </ToolBar>
+    </top>
+</BorderPane>

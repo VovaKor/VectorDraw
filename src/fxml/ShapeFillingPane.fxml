@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<TitledPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainPane" text="Fill Shape" xmlns="http://javafx.com/javafx/8"
+            fx:controller="vectordraw.controllers.ShapeFillingController" alignment="TOP_LEFT" expanded="false">
+    <tooltip>
+        <Tooltip text="%ShapeFillingTooltip.1"/>
+    </tooltip>
+    <VBox spacing="5">
+        <ComboBox fx:id="fillStyleCB" prefHeight="25.0" prefWidth="90.0">
+            <tooltip>
+                <Tooltip text="%ShapeFillingTooltip.2"/>
+            </tooltip>
+        </ComboBox>
+        <AnchorPane fx:id="fillPane">
+            <ColorPicker fx:id="fillColButton" layoutX="87.0" layoutY="0.0" prefHeight="25.0" prefWidth="100.0">
+                <tooltip>
+                    <Tooltip text="%ShapeFillingTooltip.3"/>
+                </tooltip>
+            </ColorPicker>
+            <Label layoutX="0.0" layoutY="5.0" text="Interior"/>
+        </AnchorPane>
+        <AnchorPane fx:id="hatchingsPane">
+            <ColorPicker fx:id="hatchColButton" layoutX="87.0" layoutY="0.0" prefHeight="25.0" prefWidth="100.0">
+                <tooltip>
+                    <Tooltip text="%ShapeFillingTooltip.4"/>
+                </tooltip>
+            </ColorPicker>
+            <Label layoutX="0.0" layoutY="5.0" text="Hatchings"/>
+            <Spinner fx:id="hatchSepField" layoutX="85.0" layoutY="65.0" prefHeight="25.0" prefWidth="75.0" editable="true"
+                     min="0.01" max="1000.0" initialValue="2.0" amountToStepBy="1.0">
+                <tooltip>
+                    <Tooltip text="%ShapeFillingTooltip.5"/>
+                </tooltip>
+            </Spinner>
+            <Label layoutX="0.0" layoutY="70.0" text="interval:"/>
+            <Spinner fx:id="hatchAngleField" layoutX="85.0" layoutY="33.0" prefHeight="25.0" prefWidth="75.0" editable="true"
+                     min="-1000.0" max="1000.0" initialValue="0.0" amountToStepBy="1.0">
+                <tooltip>
+                    <Tooltip text="%ShapeFillingTooltip.6"/>
+                </tooltip>
+            </Spinner>
+            <Label layoutX="0.0" layoutY="38.0" text="angle:"/>
+            <Spinner fx:id="hatchWidthField" layoutX="85.0" layoutY="98.0" prefHeight="25.0" prefWidth="75.0" editable="true"
+                     min="0.1" max="100.0" initialValue="5.0" amountToStepBy="0.1">
+                <tooltip>
+                    <Tooltip text="%ShapeFillingTooltip.7"/>
+                </tooltip>
+            </Spinner>
+            <Label layoutX="0.0" layoutY="103.0" text="Width:"/>
+        </AnchorPane>
+        <AnchorPane fx:id="gradientPane">
+            <ColorPicker fx:id="gradStartColButton" layoutX="87.0" layoutY="0.0" prefHeight="25.0" prefWidth="100.0">
+                <tooltip>
+                    <Tooltip text="%ShapeFillingTooltip.8"/>
+                </tooltip>
+            </ColorPicker>
+            <Label layoutX="0.0" layoutY="5.0" text="Start point"/>
+            <ColorPicker fx:id="gradEndColButton" layoutX="87.0" layoutY="30.0" prefHeight="25.0" prefWidth="100.0">
+                <tooltip>
+                    <Tooltip text="%ShapeFillingTooltip.9"/>
+                </tooltip>
+            </ColorPicker>
+            <Label layoutX="0.0" layoutY="35.0" text="End point"/>
+            <Spinner fx:id="gradMidPtField" layoutX="87.0" layoutY="60.0" prefHeight="25.0" prefWidth="75.0" editable="true"
+                     min="0.0" max="1.0" initialValue="0.5" amountToStepBy="0.1">
+                <tooltip>
+                    <Tooltip text="ShapeFillingTooltip.10"/>
+                </tooltip>
+            </Spinner>
+            <Label layoutX="0.0" layoutY="65.0" text="Middle Point"/>
+            <Spinner fx:id="gradAngleField" layoutX="87.0" layoutY="90.0" prefHeight="25.0" prefWidth="75.0" editable="true"
+                     min="-360.0" max="360.0" initialValue="0.0" amountToStepBy="1.0">
+                <tooltip>
+                    <Tooltip text="%ShapeFillingTooltip.11"/>
+                </tooltip>
+            </Spinner>
+            <Label layoutX="0.0" layoutY="95.0" text="Gradient angle"/>
+        </AnchorPane>
+    </VBox>
+</TitledPane>

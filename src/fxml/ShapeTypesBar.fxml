@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" spacing="2"
+      fx:controller="vectordraw.controllers.ShapeTypesBarController">
+    <fx:define>
+        <ToggleGroup fx:id="groupEditing"/>
+    </fx:define>
+    <ToggleButton fx:id="handB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <graphic>
+            <ImageView>
+                <Image url="@/res/select.png"/>
+            </ImageView>
+        </graphic>
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.1"/>
+        </tooltip>
+    </ToggleButton>
+      
+    <ToggleButton fx:id="linesB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.2"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/joinedLines.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="recB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.3"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/rectangle.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="squareB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.4"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/square.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="ellipseB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.5"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/ellipse.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="circleB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.6"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/circle.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="polygonB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.7"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/polygon.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="rhombusB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.8"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/rhombus.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="triangleB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.9"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/triangle.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="bezierB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeTypesBarTooltip.11"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/bezierCurve.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="arcB" mnemonicParsing="false" style="-fx-padding: 5 5 5 5" toggleGroup="$groupEditing">
+        <tooltip>
+            <Tooltip text="%ShapeArcTooltip.2"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@/res/Arc.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+           
+    
+</HBox>
+

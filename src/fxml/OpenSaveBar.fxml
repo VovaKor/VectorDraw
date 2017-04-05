@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" spacing="2"
+            style="-fx-padding: 0 0 0 0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="vectordraw.controllers.OpenSaveController">
+       <Button fx:id="loadButton" text="Open file" mnemonicParsing="false">
+            <graphic>
+                <ImageView>
+                    <Image url="@/res/document-open.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="saveButton" text="Save file" mnemonicParsing="false">
+            <graphic>
+                <ImageView>
+                    <Image url="@/res/document-save.png"/>
+                </ImageView>
+            </graphic>
+        </Button>   
+</HBox>
