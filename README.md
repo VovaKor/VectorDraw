@@ -1,7 +1,7 @@
 # VectorDraw
 
 This is JavaFX based vector drawing editor. 
-Core sources were extracted from https://github.com/arnobl/latexdraw
+Core sources and inspirations were extracted from https://github.com/arnobl/latexdraw
 
 Depends on:
 1. Apache™ Batik SVG Toolkit
